@@ -128,9 +128,4 @@ const dispatchToProp = dispatch => ({
     }
 })
 
-export default withRouter(
-    connect(
-        stateToProp,
-        dispatchToProp
-    )(DefaultLayout)
-)
+export default withRouter(connect(stateToProp, dispatchToProp)(DefaultLayout))

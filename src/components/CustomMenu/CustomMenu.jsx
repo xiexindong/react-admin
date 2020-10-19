@@ -99,7 +99,7 @@ class CustomMenu extends Component {
             <Menu
                 mode='inline'
                 theme='dark'
-                openKeys={openKeys}
+                defaultOpenKeys={openKeys}
                 selectedKeys={selectedKeys}
                 onClick={({ key }) => this.setState({ selectedKeys: [key] })}
                 onOpenChange={this.onOpenChange}>
